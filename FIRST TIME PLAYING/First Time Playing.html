@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Danger Zone</title>
+</head>
+<body>
+<script>
+//localStorage.setItem(name, contents)
+//localStorage.getItem(name)
+//localStorage.removeItem(name)
+
+function man() {
+localStorage.setItem("Warrior", "Man")
+console.log("Warrior: " + localStorage.getItem("Warrior"))
+}
+
+function woman() {
+localStorage.setItem("Warrior", "Woman")
+console.log("Warrior: " + localStorage.getItem("Warrior"))
+}
+
+localStorage.setItem("money", 0)
+localStorage.setItem("health", 5)
+localStorage.setItem("level", 1)
+localStorage.setItem("armor 1", 0)
+localStorage.setItem("armor 2", 0)
+localStorage.setItem("armor 3", 0)
+localStorage.setItem("armor 4", 0)
+localStorage.setItem("UserName", prompt("Name Your Warrior"))
+console.log("User Name: " + localStorage.getItem("UserName"))
+</script>
+<h1>You May Now Chose Your Warrior Then Open the Game</h1>
+<button onClick="man()"><img src="./Warior 1.bmp"></button>
+<button onClick="woman()"><img src="./Warior 2.bmp"></button>
+</body>
+</html>

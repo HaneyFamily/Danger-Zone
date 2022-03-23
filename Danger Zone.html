@@ -1,0 +1,99 @@
+<html>
+<head>
+<script src="./Cheat Code.js"></script>
+<script src="./Password.js"></script>
+<title>Danger Zone</title>
+<link rel="shortcut icon" href="./symbol.png"/>
+</head>
+<style>
+body {
+text-align: center;
+background-color: #977475;
+}
+
+#livesmoneypic {
+height: 20px;
+width: 20px;
+}
+
+#moneyuser, #heartsuser, #userNameUser {
+height: 20px;
+width: 200px;
+font-size: 20px;
+border: none;
+background: none;
+text-align: center;
+}
+
+#livesmoney {
+width: 100%;
+}
+
+table {
+width: 100%;
+text-align: center;
+}
+
+#title {
+color: #ff0000;
+font-size: 70px;
+font-family: Bernard MT Condensed;
+}
+</style>
+<body>
+<div id = "digital-clock"> </div>
+<script src="./Time.js"></script>
+<table>
+<tr>
+<td>
+<div id="livesmoney">
+<img src="./coin.bmp" id="livesmoneypic">
+<br>
+<input value="NULL" id="moneyuser" disabled>
+</div>
+</td>
+<td>
+<div id="livesmoney">
+<img src="./heart.bmp" id="livesmoneypic">
+<br>
+<input value="NULL" id="heartsuser" disabled>
+</div>
+</td>
+</tr>
+</table>
+<h1 id="title">Danger Zone</h1>
+<br>
+<input value="NULL" id="userNameUser" disabled>
+<br>
+<br>
+<button>Play</button>
+<button>Shop</button>
+<br>
+<img src="./Warior 1.png" id="W1">
+<img src="./Warior 2.png" id="W2">
+<script>
+//localStorage.setItem(name, contents)
+//localStorage.getItem(name)
+//localStorage.removeItem(name)
+
+let money = localStorage.getItem("money")
+let health = localStorage.getItem("health")
+let level = localStorage.getItem("level")
+let a1 = localStorage.getItem("armor 1")
+let a2 = localStorage.getItem("armor 2")
+let a3 = localStorage.getItem("armor 3")
+let a4 = localStorage.getItem("armor 4")
+let war = localStorage.getItem("Warrior");
+console.log(war);
+moneyuser.value = money;
+heartsuser.value = health;
+userNameUser.value = localStorage.getItem("UserName");
+if (war === "Man") {
+document.getElementById('W2').remove();
+}
+if (war === "Woman") {
+document.getElementById('W1').remove();
+}
+</script>
+</body>
+</html>
